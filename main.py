@@ -43,7 +43,13 @@ class NexusCameraService(remote.Service):
         if not user:
             raise endpoints.UnauthorizedException("You need to be logged in to delete your account.")
 
-        users.User.get_by_user(user).delete()
+        user = users.User.get_by_user(user)
+
+        if not user:
+            raise endpoints.NotFoundException("We don't have a user associated with this Google account.")
+        
+        user.delete()
+        return message_types.VoidMessage()
 
     @endpoints.method(UserInfoRequest, UserInfoResponse)
     def createOrUpdateUser(self, request):
