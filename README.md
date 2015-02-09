@@ -10,8 +10,4 @@ This is a product being built by the Assembly community. You can help push this 
 
 Assembly products are like open-source and made with contributions from the community. Assembly handles the boring stuff like hosting, support, financing, legal, etc. Once the product launches we collect the revenue and split the profits amongst the contributors.
 
-<<<<<<< HEAD
 Visit [https://assembly.com](https://assembly.com) to learn more.
-=======
-Visit [https://assembly.com](https://assembly.com) to learn more.
->>>>>>> 3e590086468d5e05efbe1b00da4c5c36c7e3c0b4
